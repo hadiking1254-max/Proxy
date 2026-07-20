@@ -7,7 +7,7 @@
 # ---- Stage 1: pull the official, pre-built mtg binary ----
 # Pinned to a specific version tag on purpose (never ":latest"),
 # so a build here never silently changes behavior later.
-FROM ghcr.io/9seconds/mtg:v2.2.4 AS mtg-binary
+FROM ghcr.io/9seconds/mtg:2.2.8 AS mtg-binary
 
 # ---- Stage 2: minimal runtime image ----
 FROM alpine:3.20
